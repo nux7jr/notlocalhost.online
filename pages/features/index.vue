@@ -2,7 +2,7 @@
   <div class="page">
     <mainHeader />
     <!-- {{ $t('My name is Mike') }} -->
-    content
+    фичи
     <mainFooter />
   </div>
 </template>

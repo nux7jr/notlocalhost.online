@@ -25,7 +25,7 @@ export default {
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'preconnect', type: 'image/x-icon', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', type: 'image/x-icon', href: 'https://fonts.gstatic.com' },
-        { rel: 'stylesheet', type: 'image/x-icon', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap' }
+        { rel: 'stylesheet', type: 'image/x-icon', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap' }
       ],
 
     }
