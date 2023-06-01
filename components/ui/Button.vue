@@ -1,17 +1,22 @@
 <template>
-  <button :class="'btn' + this.class">
+  <button :class="['btn', this.color]" @click="clickOnButton()">
     {{ label }}
   </button>
 </template>
 
 <script>
 export default {
+  methods: {
+    clickOnButton() {
+      this.$emit('click');
+    },
+  },
   props: {
     label: {
       type: String,
       default: 'default',
     },
-    class: {
+    color: {
       type: String,
       default: '',
     },
@@ -25,7 +30,8 @@ export default {
 </script>
 <style scoped>
 .btn {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
   padding: 0.75rem 1.5rem;
   border-radius: 0.25rem;
   font-weight: 600;

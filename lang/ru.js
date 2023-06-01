@@ -1,15 +1,23 @@
 export default {
+  // menu 
+  'Site Navigation': 'Навигация по сайту',
+  'General': 'Основное',
   'home': 'домой',
   'about': 'о проекте',
-  'theme': 'сменить тему',
-  'translator': 'переводчик',
-  'forecast': 'погода',
-  'todo': 'дела',
-  'features': 'фичи',
-  'blog': 'блог',
+  'More': 'Еще',
   'settings': 'настройки',
+  'Features': 'Фичи',
+  'todo': 'дела',
+  'translator': 'переводчик',
+  'ui': 'юай',
+  'training': 'тренировки',
+  'Lang': 'Язык',
+  'Blog': 'Блог',
+  'Theme': 'Тема',
 
-  'Hey there': 'всем салют',
-  'My name is Mike': 'меня зовут',
-  'And Im a Frontend Developer': 'And Im a Frontend Developer'
+  // main page
+  'Hey there': 'Всем салют',
+  'My name is Mike': 'Меня зовут Михаил',
+  'And Im a Frontend Developer': 'Я фронтендер'
+
 }

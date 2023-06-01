@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <mainHeader />
+    <!-- <mainHeader /> -->
     <section class="slogan">
       <div class="slogan__wrapper">
         <div class="slogan__info">
@@ -18,18 +18,13 @@
         </div>
       </div>
     </section>
-
-    <mainFooter />
   </div>
 </template>
 
 <script>
-import mainHeader from '@/components/include/mainHeader.vue';
-import mainFooter from '@/components/include/mainFooter.vue';
 export default {
   auth: false,
   name: 'indexPage',
-  components: { mainHeader, mainFooter },
 };
 </script>
 <style></style>

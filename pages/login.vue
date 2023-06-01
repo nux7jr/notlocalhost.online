@@ -1,6 +1,5 @@
 <template>
   <div class="page">
-    <mainHeader />
     <div>
       <form @submit.prevent="userLogin">
         <div>
@@ -16,17 +15,13 @@
         </div>
       </form>
     </div>
-    <mainFooter />
   </div>
 </template>
 
 <script>
-import mainHeader from '@/components/include/mainHeader.vue';
-import mainFooter from '@/components/include/mainFooter.vue';
 // import axios from 'axios';
 export default {
   name: 'Login',
-  components: { mainHeader, mainFooter },
   data() {
     return {
       login: {

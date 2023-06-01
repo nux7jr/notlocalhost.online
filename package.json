@@ -22,5 +22,8 @@
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^0.7.1"
   }
 }

@@ -23,15 +23,14 @@ export default {
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'preconnect', type: 'image/x-icon', href: 'https://fonts.googleapis.com' },
-        { rel: 'preconnect', type: 'image/x-icon', href: 'https://fonts.gstatic.com' },
-        { rel: 'stylesheet', type: 'image/x-icon', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap' }
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap' }
       ],
-
     }
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/css/main.css'],
+  css: ['@/static/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -50,9 +49,11 @@ export default {
     baseURL: 'http://notlocalhost.online',
     browserBaseURL: 'http://localhost:3000',
   },
+
   modules: [
     // '@nuxtjs/axios',
     '@nuxtjs/auth-next',
+    '@nuxt/image',
     ['cookie-universal-nuxt'],
     ['nuxt-i18n', {
       locales: [

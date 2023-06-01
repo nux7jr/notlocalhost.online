@@ -1,19 +1,22 @@
 <template>
   <div class="page">
-    <mainHeader />
-    <!-- {{ $t('My name is Mike') }} -->
-    фичи
-    <mainFooter />
+    <h1>Фичи</h1>
+
+    <Nuxt-link class="nav__item" :to="localePath('/features/translator')">{{
+      $t('translator')
+    }}</Nuxt-link>
+    <Nuxt-link class="nav__item" :to="localePath('/features/todo')">{{
+      $t('todo')
+    }}</Nuxt-link>
+    <!-- <Nuxt-link class="nav__item" :to="localePath('/features/ui')">{{
+      $t('ui')
+    }}</Nuxt-link> -->
   </div>
 </template>
 
 <script>
-import mainHeader from '@/components/include/mainHeader.vue';
-import mainFooter from '@/components/include/mainFooter.vue';
-
 export default {
   auth: false,
   name: 'Features',
-  components: { mainHeader, mainFooter },
 };
 </script>
