@@ -2,27 +2,37 @@
   <div class="template-input">
     <label v-if="label" :for="this.index">{{ label }}</label>
     <input
+      @input="this.changeInput"
       :placeholder="this.placeholder"
       :class="['input', this.color]"
       :id="this.index"
       :name="this.index"
       :disabled="this.disabled"
-      @click="clickOnInput()"
+      :type="this.type"
+      :value="value"
     />
+    <span v-if="error" class="error">{{ error }}</span>
   </div>
 </template>
 
 <script>
 export default {
   methods: {
-    clickOnInput() {
-      this.$emit('click');
+    changeInput: function (evt) {
+      console.log(evt);
+      // this.$emit('change');
+      // console.log(input.value);
     },
   },
+
   props: {
     label: {
       type: String,
       default: 'default',
+    },
+    error: {
+      type: String,
+      default: '',
     },
     color: {
       type: String,
@@ -43,6 +53,15 @@ export default {
       required: false,
       default: 'index',
     },
+    type: {
+      type: String,
+      required: false,
+      default: 'text',
+    },
+    value: {
+      required: false,
+      default: '',
+    },
     disabled: {
       type: Boolean,
       required: false,
@@ -57,9 +76,10 @@ export default {
   flex-direction: column;
 }
 .input {
+  margin-top: 0.4rem;
   max-width: 360px;
   font-family: 'Open Sans', sans-serif;
-
+  outline: none;
   padding: 0.5rem;
   border-radius: 0.25rem;
   font-weight: 600;
@@ -85,5 +105,17 @@ export default {
 }
 .danger::placeholder {
   color: var(--color-danger);
+}
+.input:disabled.danger,
+.input[disabled].danger {
+  border: 1px solid #da0d0d;
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: all;
+}
+.error {
+  margin-top: 0.5rem;
+  color: #ff7171;
+  font-size: 14px;
 }
 </style>

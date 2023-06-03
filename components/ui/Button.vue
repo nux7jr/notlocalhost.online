@@ -32,7 +32,7 @@ export default {
 .btn {
   font-family: 'Open Sans', sans-serif;
 
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 0.25rem;
   font-weight: 600;
   cursor: pointer;

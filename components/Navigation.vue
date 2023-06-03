@@ -269,6 +269,8 @@ nav {
 }
 .dropdown a {
   color: var(--color-font);
+  width: 100%;
+  display: block;
 }
 .dropdown-active {
   display: flex;
